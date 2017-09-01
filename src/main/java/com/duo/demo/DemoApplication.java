@@ -12,6 +12,8 @@ import java.util.List;
 /*如果我们要使用第三方的json解析框架的话：
 1. 我们需要在pom.xml中引入相应的依赖
 2. 需要在DemoApplication中继承 WebMvcConfigurerAdapter 重写方法 并添加我们自己定义的Json解析框架
+2.1 直接使用@Bean 注入第三方的Json解析框架
+3. 使用了第三方解析框架后，我们便可以使用第三方框架内的方法来格式化一些输出内容
 * */
 @SpringBootApplication
 /*让DemoApplications 继承 WebMvcConfigurerAdapter

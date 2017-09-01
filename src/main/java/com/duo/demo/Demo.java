@@ -18,6 +18,10 @@ public class Demo {
     private int id;
     private String name;
     private Date createTime;
+    private String remarks;
+
+
+
 
     @JSONField(format = "yyyy-MM-dd HH:mm")
     public Date getCreateTime() {
@@ -43,5 +47,13 @@ public class Demo {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getRemarks() {
+        return remarks;
+    }
+
+    public void setRemarks(String remarks) {
+        this.remarks = remarks;
     }
 }
