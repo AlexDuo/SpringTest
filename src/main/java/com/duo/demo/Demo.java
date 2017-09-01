@@ -14,6 +14,7 @@ import java.util.Date;
 声明试题中应有的变量类型
 然后对各个变量声明Get 和 Set 方法
 * */
+/*我在此处添加了多行注释*/
 public class Demo {
     private int id;
     private String name;
