@@ -37,6 +37,7 @@ public class HelloController {
         demo.setId(1);
         demo.setName("DuoZhang");
         demo.setCreateTime(new Date());
+        demo.setRemarks("This is remark");
 
         return demo;
     }

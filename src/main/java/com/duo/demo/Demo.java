@@ -19,6 +19,10 @@ public class Demo {
     private int id;
     private String name;
     private Date createTime;
+    /*如果现在的需求是我们不想返回 remarks 我们可以通过设置@JsonField中的serialize 属性来进行实现
+    serialize 是否需要序列化属性
+    * */
+    @JSONField(serialize = false)
     private String remarks;
 
 
