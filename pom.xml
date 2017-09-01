@@ -47,14 +47,43 @@
 
 	</dependencies>
 <!--依赖管理结束-->
+
+	<!--构建节点开始-->
 	<build>
+    <!--在plugins 标签中添加plugin-->
 		<plugins>
+			<!--SpringLoader plugin start-->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+            <!--添加依赖-->
+				<dependencies>
+					<!--SpringLoaded hot deploy-->
+					<dependency>
+						<groupId>org.springframework</groupId>
+						<artifactId>springloaded</artifactId>
+						<version>1.2.7.RELEASE</version>
+					</dependency>
+				</dependencies>
+            <!--executions-->
+				<executions>
+					<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+						<configuration>
+							<classifier>exec</classifier>
+						</configuration>
+					</execution>
+				</executions>
+				<!--executions-->
 			</plugin>
+			<!--SpringLoader plugin start-->
 		</plugins>
+
 	</build>
+
+	<!--构建节点结束-->
 
 
 </project>
